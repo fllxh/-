@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+</head>
+<body>
+<h1 style="background-color:darkcyan ">hello world</h1>
+<h1>学生姓名</h1>
+<form action="/index/" method="post">
+    <input type="text" name="student_name"/>
+    <input type="text" name="专业"/>
+    <input type="submit" value="提交"/>
+</form>
+<h1 style="background-color:#fff;">用户列表</h1>
+<table border="1">
+    <thead>
+    <th>用户名</th>
+    </thead>
+    <tbody>
+    {% for line in data %}
+        <tr>
+            <td>{{ line.Stu_name }}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>

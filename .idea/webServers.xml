@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="79a0d9ef-9c8e-498f-856e-fc24c72e7e21" name="TencentCloud" url="http://119.29.114.218">
+        <fileTransfer host="119.29.114.218" port="22" rootFolder="/home/ubuntu" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="17695fdf-c519-4868-ba46-ba2cea7750ab" name="SchoolCloud" url="http://202.194.40.130">
+        <fileTransfer host="202.194.40.130" port="22" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

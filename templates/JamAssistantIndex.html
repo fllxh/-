@@ -1,0 +1,1018 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+
+    <title>山东大学（威海）国奖助手</title>
+
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'/>
+    <meta name="viewport" content="width=device-width"/>
+
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/logo.png"/>
+    <link rel="icon" type="image/png" href="/assets/img/logo.png"/>
+
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"/>
+
+    <!-- CSS Files -->
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/assets/css/material-bootstrap-wizard.css" rel="stylesheet"/>
+
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link href="/assets/css/demo.css" rel="stylesheet"/>
+</head>
+
+<body>
+
+<div class="image-container set-full-height" style="background-image: url('/assets/img/wizard-profile.jpg')">
+    <a href="https://www.wh.sdu.edu.cn/">
+        <div class="logo-container">
+            <div class="logo">
+                <img src="/assets/img/school_logo.png">
+            </div>
+            <div class="brand" style="width: 50%">
+                <img src="/assets/img/school_word.png">
+            </div>
+        </div>
+    </a>
+
+    <!--   Big container   -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+                <!--      Wizard container        -->
+                <div class="wizard-container">
+                    <div class="card wizard-card" data-color="red" id="wizardProfile">
+                        <form action="/" method="post">
+                            <div class="wizard-header">
+                                <h3 class="wizard-title">果酱助手</h3>
+                                <h5>山东大学（威海）国家奖学金填写助手</h5>
+                            </div>
+                            <div class="wizard-navigation">
+                                <ul>
+                                    <li><a href="#about" data-toggle="tab">个人基本信息</a></li>
+                                    <li><a href="#award" data-toggle="tab">学习及获奖情况</a></li>
+                                    <li><a href="#reason" data-toggle="tab">申请理由</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="tab-content">
+                                <div class="tab-pane" id="about">
+                                    <div class="row">
+                                        <div class="col-sm-10 col-sm-offset-1">
+                                            <div class="input-group">
+                                                <span class="input-group input-group-addon">
+                                                    <label>编号</label>
+                                                </span>
+                                                <div class="form-group label-floating">
+                                                    <label class="control-label">
+                                                        <small>请输入编号</small>
+                                                    </label>
+                                                    <input name="stu_no" type=number class="form-control"
+                                                           required style="width: 110px">
+                                                </div>
+                                                <span class="input-group input-group-addon">
+                                                    <label>学号</label>
+                                                </span>
+                                                <div class="form-group label-floating">
+                                                    <label class="control-label">
+                                                        <small>请输入学号</small>
+                                                    </label>
+                                                    <input name="stu_sno" type="text" class="form-control"
+                                                           required style="width: 120px;">
+                                                </div>
+                                                <span class="input-group input-group-addon">
+                                                <label>院系</label>
+                                                </span>
+                                                <div class="form-group label-floating">
+                                                    <label class="control-label">请输入学院</label>
+                                                    <select name="stu_dept" class="form-control" required>
+                                                        <option value=""></option>
+                                                        <option value="机电与信息工程学院"> 机电与信息工程学院</option>
+                                                        <option value="商学院"> 商学院</option>
+                                                        <option value="法学院"> 法学院</option>
+                                                        <option value="数学与统计学院"> 数学与统计学院</option>
+                                                        <option value="空间科学与物理学院"> 空间科学与物理学院</option>
+                                                        <option value="海洋学院"> 海洋学院</option>
+                                                        <option value="东北亚学院"> 东北亚学院</option>
+                                                        <option value="文化传播学院"> 文化传播学院</option>
+                                                        <option value="翻译学院"> 翻译学院</option>
+                                                        <option value="艺术学院"> 艺术学院</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-10 col-sm-offset-1">
+                                            <div class="input-group">
+                                                <span class="input-group input-group-addon">
+                                                    <label>姓名</label>
+                                                </span>
+                                                <div class="form-group label-floating">
+                                                    <label class="control-label">
+                                                        <small>请输入姓名</small>
+                                                    </label>
+                                                    <input name="stu_name" type="text" style="width:140px;"
+                                                           required class="form-control">
+                                                </div>
+                                                <span class="input-group input-group-addon">
+                                                    <label style="width:35px; text-align:right;">性别</label>
+                                                </span>
+                                                <div class="form-group label-floating">
+                                                    <div class="form-group label-floating">
+                                                        <div class="form-group label-floating">
+                                                            <label class="control-label">请输入性别</label>
+                                                            <select name="stu_sex" class="form-control" required
+                                                                    style="width:70px;">
+                                                                <option value=""></option>
+                                                                <option value="男"> 男</option>
+                                                                <option value="女"> 女</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <span class="input-group input-group-addon">
+                                                <label style="width:90px;text-align:right;">出生年月</label>
+                                                </span>
+                                                <input type="month" name="stu_bir" required/>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-10 col-sm-offset-1">
+                                            <div class="input-group">
+                                                <span class="input-group input-group-addon">
+                                                    <label>政治面貌</label>
+                                                </span>
+                                                <div class="form-group label-floating" style="width:115px;">
+                                                    <label class="control-label">请输入政治面貌</label>
+                                                    <select name="stu_poli" class="form-control" required>
+                                                        <option value=""></option>
+                                                        <option value="中共党员"> 中共党员</option>
+                                                        <option value="中共预备党员"> 中共预备党员</option>
+                                                        <option value="共青团员"> 共青团员</option>
+                                                        <option value="群众"> 群众</option>
+                                                    </select>
+                                                </div>
+                                                <span class="input-group input-group-addon">
+                                                    <label style="width:35px; text-align:right;">民族</label>
+                                                </span>
+                                                <div class="form-group label-floating">
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Ethnicity</label>
+                                                        <select name="stu_nation" class="form-control"
+                                                                style="width:70px;" required>
+                                                            <option value="汉族" selected="selected">汉族</option>
+                                                            <option value="蒙古族">蒙古族</option>
+                                                            <option value="彝族">彝族</option>
+                                                            <option value="侗族">侗族</option>
+                                                            <option value="哈萨克族">哈萨克族</option>
+                                                            <option value="畲族">畲族</option>
+                                                            <option value="纳西族">纳西族</option>
+                                                            <option value="仫佬族">仫佬族</option>
+                                                            <option value="仡佬族">仡佬族</option>
+                                                            <option value="怒族">怒族</option>
+                                                            <option value="保安族">保安族</option>
+                                                            <option value="鄂伦春族">鄂伦春族</option>
+                                                            <option value="回族">回族</option>
+                                                            <option value="壮族">壮族</option>
+                                                            <option value="瑶族">瑶族</option>
+                                                            <option value="傣族">傣族</option>
+                                                            <option value="高山族">高山族</option>
+                                                            <option value="景颇族">景颇族</option>
+                                                            <option value="羌族">羌族</option>
+                                                            <option value="锡伯族">锡伯族</option>
+                                                            <option value="乌孜别克族">乌孜别克族</option>
+                                                            <option value="裕固族">裕固族</option>
+                                                            <option value="赫哲族">赫哲族</option>
+                                                            <option value="藏族">藏族</option>
+                                                            <option value="布依族">布依族</option>
+                                                            <option value="白族">白族</option>
+                                                            <option value="黎族">黎族</option>
+                                                            <option value="拉祜族">拉祜族</option>
+                                                            <option value="柯尔克孜族">柯尔克孜族</option>
+                                                            <option value="布朗族">布朗族</option>
+                                                            <option value="阿昌族">阿昌族</option>
+                                                            <option value="俄罗斯族">俄罗斯族</option>
+                                                            <option value="京族">京族</option>
+                                                            <option value="门巴族">门巴族</option>
+                                                            <option value="维吾尔族">维吾尔族</option>
+                                                            <option value="朝鲜族">朝鲜族</option>
+                                                            <option value="土家族">土家族</option>
+                                                            <option value="傈僳族">傈僳族</option>
+                                                            <option value="水族">水族</option>
+                                                            <option value="土族">土族</option>
+                                                            <option value="撒拉族">撒拉族</option>
+                                                            <option value="普米族">普米族</option>
+                                                            <option value="鄂温克族">鄂温克族</option>
+                                                            <option value="塔塔尔族">塔塔尔族</option>
+                                                            <option value="珞巴族">珞巴族</option>
+                                                            <option value="苗族">苗族</option>
+                                                            <option value="满族">满族</option>
+                                                            <option value="哈尼族">哈尼族</option>
+                                                            <option value="佤族">佤族</option>
+                                                            <option value="东乡族">东乡族</option>
+                                                            <option value="达斡尔族">达斡尔族</option>
+                                                            <option value="毛南族">毛南族</option>
+                                                            <option value="塔吉克族">塔吉克族</option>
+                                                            <option value="德昂族">德昂族</option>
+                                                            <option value="独龙族">独龙族</option>
+                                                            <option value="基诺族">基诺族</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <span class="input-group input-group-addon">
+                                                <label style="width:86px;text-align:right;">入学时间</label>
+                                                </span>
+                                                <select name="stu_month" class="form-control"
+                                                        style="width:145px;" required>
+                                                    <option value=""></option>
+                                                    <option value="2015年9月">2015年9月</option>
+                                                    <option value="2016年9月">2016年9月</option>
+                                                    <option value="2017年9月">2017年9月</option>
+                                                </select>
+                                                {#=<input type="month" name="stu_month" required/>#}
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-10 col-sm-offset-1">
+                                            <div class="input-group">
+                                                <span class="input-group input-group-addon">
+                                                    <label>专业</label>
+                                                </span>
+                                                <div class="form-group label-floating">
+                                                    <label class="control-label">
+                                                        <small>请输入所在专业</small>
+                                                    </label>
+                                                    <input name="stu_major" type="text" class="form-control"
+                                                           required style="width:150px;">
+                                                </div>
+                                                <span class="input-group input-group-addon">
+                                                    <label style="text-align:right;">学制</label>
+                                                </span>
+
+                                                <div class="form-group label-floating" style="width:70px;">
+                                                    <select name="stu_len" class="form-control">
+                                                        <option value="四年制"> 四年制</option>
+                                                        <option value="五年制"> 五年制</option>
+                                                        <option value="三年制"> 三年制</option>
+                                                    </select>
+                                                </div>
+                                                <span class="input-group input-group-addon">
+                                                <label style="width:87px;text-align:right;">联系电话</label>
+                                                </span>
+                                                <div class="form-group label-floating">
+                                                    <label class="control-label">
+                                                        <small>请输入联系方式</small>
+                                                    </label>
+                                                    <input name="stu_tel" type="text" class="form-control" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-10 col-sm-offset-1">
+                                            <div class="input-group">
+                                                <span class="input-group input-group-addon">
+                                                <label>身份证号码</label>
+                                                </span>
+                                                <div class="form-group label-floating">
+                                                    <label class="control-label">
+                                                        <small>请输入身份证号码</small>
+                                                    </label>
+                                                    <input name="stu_id" type="text" class="form-control" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="tab-pane" id="award">
+                                    <h4 class="info-text"> 学习情况 </h4>
+                                    <div class="row">
+                                        <div class="col-sm-10 col-sm-offset-1">
+                                            <div class="input-group">
+                                                <span class="input-group input-group-addon">
+                                                    <label>成绩排名</label>
+                                                </span>
+                                                <input name="stu_p1" type="number" class="form-control"
+                                                       required style="width: 40px">
+                                                <span class="input-group input-group-addon">
+                                                    <label>/</label>
+                                                </span>
+                                                <input name="stu_p2" type="number" class="form-control"
+                                                       required style="width: 40px">
+
+                                                <span class="input-group input-group-addon">
+                                                    <label style="width: 180px ;text-align:right;">综合排名</label>
+                                                </span>
+                                                <input name="stu_p3" type="number" class="form-control"
+                                                       required style="width: 40px">
+                                                <span class="input-group input-group-addon">
+                                                    <label>/</label>
+                                                </span>
+                                                <input name="stu_p4" type="number" class="form-control"
+                                                       required style="width: 40px">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-10 col-sm-offset-1">
+                                            <div class="input-group">
+                                                <span class="input-group input-group-addon">
+                                                    <label>必修课</label>
+                                                </span>
+                                                <input name="stu_p5" type="number" class="form-control"
+                                                       required style="width: 40px">
+                                                <span class="input-group input-group-addon">
+                                                    <label>门，其中及格以上</label>
+                                                </span>
+                                                <input name="stu_p6" type="number" class="form-control"
+                                                       required style="width: 40px">
+                                                <span class="input-group input-group-addon">
+                                                    <label style="width: 500px;text-align:left; ">门.</label>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <h4 class="info-text"> 获奖情况 </h4>
+
+                                    <div class="row">
+                                        <div class="col-sm-10 col-sm-offset-1">
+                                            <div class="input-group">
+                                                <span class="input-group input-group-addon">
+                                                    <label>奖项一  </label>
+                                                </span>
+                                                <div class="form-group label-floating" style="width:115px;">
+                                                    <div class="form-group label-floating">
+                                                        <div class="form-group label-floating">
+                                                            <label class="control-label">Award Name</label>
+                                                            <select name="stu_awardname1" class="form-control"
+                                                                    style="width:360px"
+                                                                    required>
+                                                                <option value="">无</option>
+                                                                <option value="国家奖学金">国家奖学金</option>
+                                                                <option value="国家励志奖学金">国家励志奖学金</option>
+                                                                <option value="山东大学（威海）优秀团员">
+                                                                    山东大学（威海）优秀团员（2015、2016）
+                                                                </option>
+                                                                <option value="山东大学（威海）校级三好学生">
+                                                                    山东大学（威海）校级三好学生（2015、2016）
+                                                                </option>
+                                                                <option value="山东大学（威海）校级优秀学生干部">
+                                                                    山东大学（威海）校级优秀学生干部（2015、2016）
+                                                                </option>
+                                                                <option value="优秀学生一等奖学金">
+                                                                    山东大学（威海）优秀学生一等奖学金（2015、2016）
+                                                                </option>
+                                                                <option value="优秀学生二等奖学金">
+                                                                    山东大学（威海）优秀学生二等奖学金（2015、2016）
+                                                                </option>
+                                                                <option value="优秀学生三等奖学金">
+                                                                    山东大学（威海）优秀学生三等奖学金（2015、2016）
+                                                                </option>
+                                                                <option value="山东大学（威海）一等学业奖学金">
+                                                                    山东大学（威海）一等学业奖学金（2017）
+                                                                </option>
+                                                                <option value="山东大学（威海）二等学业奖学金">
+                                                                    山东大学（威海）二等学业奖学金（2017）
+                                                                </option>
+                                                                <option value="山东大学（威海）三等学业奖学金">
+                                                                    山东大学（威海）三等学业奖学金（2017）
+                                                                </option>
+                                                                <option value="研究创新奖学金">研究创新奖学金（2017）</option>
+                                                                <option value="创业实践奖学金">创业实践奖学金（2017）</option>
+                                                                <option value="社会服务奖学金">社会服务奖学金（2017）</option>
+                                                                <option value="美育素养奖学金">美育素养奖学金（2017）</option>
+                                                                <option value="体育素养奖学金">体育素养奖学金（2017）</option>
+                                                                <option value="学科特色奖学金">学科特色奖学金（2017）</option>
+                                                                <option value="山东省高等学校优秀学生">山东省高等学校优秀学生</option>
+                                                                <option value="山东省高等学校优秀学生干部">山东省高等学校优秀学生干部</option>
+                                                                {#                                                                <option value="“互联网+”大学生创新创业大赛国家银奖">#}
+                                                                {#                                                                    “互联网+”大学生创新创业大赛国家银奖#}
+                                                                {#                                                                </option>#}
+                                                                {#                                                                <option value="“互联网+”大学生创新创业大赛国家银奖">#}
+                                                                {#                                                                    “互联网+”大学生创新创业大赛国家银奖#}
+                                                                {#                                                                </option>#}
+                                                                {#                                                                <option value="“互联网+”大学生创新创业大赛国家铜奖">#}
+                                                                {#                                                                    “互联网+”大学生创新创业大赛国家铜奖#}
+                                                                {#                                                                </option>#}
+                                                                {#                                                                <option value="“挑战杯”大学生创业计划竞赛国家级一等奖">#}
+                                                                {#                                                                    “挑战杯”大学生创业计划竞赛国家级一等奖#}
+                                                                {#                                                                </option>#}
+                                                                {#                                                                <option value="“挑战杯”大学生创业计划竞赛国家级二等奖">#}
+                                                                {#                                                                    “挑战杯”大学生创业计划竞赛国家级二等奖#}
+                                                                {#                                                                </option>#}
+                                                                {#                                                                <option value="“挑战杯”大学生创业计划竞赛国家级三等奖">#}
+                                                                {#                                                                    “挑战杯”大学生创业计划竞赛国家级三等奖#}
+                                                                {#                                                                </option>#}
+                                                                <option value="“创青春”大学生创业大赛省级金奖">“创青春”山东省大学生创业大赛金奖
+                                                                </option>
+                                                                <option value="“创青春”大学生创业大赛省级银奖">“创青春”山东省大学生创业大赛银奖
+                                                                </option>
+                                                                <option value="“创青春”大学生创业大赛省级铜奖">“创青春”山东省大学生创业大赛铜奖
+                                                                </option>
+                                                                <option value="大学生思想政治风采大赛校级一等奖">大学生思想政治风采大赛校级一等奖
+                                                                </option>
+                                                                <option value="大学生思想政治风采大赛校级二等奖">大学生思想政治风采大赛校级二等奖
+                                                                </option>
+                                                                <option value="大学生思想政治风采大赛校级三等奖">大学生思想政治风采大赛校级三等奖
+                                                                </option>
+                                                                <option value="全国大学生数学建模竞赛国家一等奖">全国大学生数学建模竞赛国家一等奖
+                                                                </option>
+                                                                <option value="全国大学生数学建模竞赛国家二等奖">全国大学生数学建模竞赛国家二等奖
+                                                                </option>
+                                                                <option value="全国大学生数学建模竞赛省级一等奖">全国大学生数学建模竞赛省级一等奖
+                                                                </option>
+                                                                <option value="全国大学生数学建模竞赛省级二等奖">全国大学生数学建模竞赛省级二等奖
+                                                                </option>
+                                                                <option value="全国大学生英语竞赛B类一等奖">全国大学生英语竞赛B类一等奖</option>
+                                                                <option value="全国大学生英语竞赛B类二等奖">全国大学生英语竞赛B类二等奖</option>
+                                                                <option value="全国大学生英语竞赛B类三等奖">全国大学生英语竞赛B类三等奖</option>
+                                                                <option value="全国大学生英语竞赛C类一等奖">全国大学生英语竞赛C类一等奖</option>
+                                                                <option value="全国大学生英语竞赛C类二等奖">全国大学生英语竞赛C类二等奖</option>
+                                                                <option value="全国大学生英语竞赛C类三等奖">全国大学生英语竞赛C类三等奖</option>
+                                                                <option value="全国大学生英语竞赛D类一等奖">全国大学生英语竞赛D类一等奖</option>
+                                                                <option value="全国大学生英语竞赛D类二等奖">全国大学生英语竞赛D类二等奖</option>
+                                                                <option value="全国大学生英语竞赛D类三等奖">全国大学生英语竞赛D类三等奖</option>
+                                                                <option value="全国大学生智能汽车竞赛省级一等奖">全国大学生智能汽车竞赛省级一等奖
+                                                                </option>
+                                                                <option value="全国大学生智能汽车竞赛省级二等奖">全国大学生智能汽车竞赛省级二等奖
+                                                                </option>
+                                                                <option value="全国大学生智能汽车竞赛省级三等奖">全国大学生智能汽车竞赛省级三等奖
+                                                                </option>
+                                                                {#                                                                <option value="大学生机电产品创新设计竞赛省级一等奖">#}
+                                                                {#                                                                    山东省大学生机电产品创新设计竞赛省级一等奖#}
+                                                                {#                                                                </option>#}
+                                                                {#                                                                <option value="大学生机电产品创新设计竞赛省级二等奖">#}
+                                                                {#                                                                    山东省大学生机电产品创新设计竞赛省级二等奖#}
+                                                                {#                                                                </option>#}
+                                                                {#                                                                <option value="大学生机电产品创新设计竞赛省级三等奖">#}
+                                                                {#                                                                    山东省大学生机电产品创新设计竞赛省级三等奖#}
+                                                                {#                                                                </option>#}
+                                                                {#                                                                <option value="中国机器人大赛暨RoboCup公开赛全国一等奖">#}
+                                                                {#                                                                    中国机器人大赛暨RoboCup公开赛全国一等奖#}
+                                                                {#                                                                </option>#}
+                                                                {#                                                                <option value="中国机器人大赛暨RoboCup公开赛全国二等奖">#}
+                                                                {#                                                                    中国机器人大赛暨RoboCup公开赛全国二等奖#}
+                                                                {#                                                                </option>#}
+                                                                {#                                                                <option value="中国机器人大赛暨RoboCup公开赛全国三等奖">#}
+                                                                {#                                                                    中国机器人大赛暨RoboCup公开赛全国三等奖#}
+                                                                {#                                                                </option>#}
+                                                                <option value="全国大学生电子设计竞赛省级一等奖">全国大学生电子设计竞赛省级一等奖
+                                                                </option>
+                                                                <option value="全国大学生电子设计竞赛省级二等奖">全国大学生电子设计竞赛省级二等奖
+                                                                </option>
+                                                                <option value="全国大学生电子设计竞赛省级三等奖">全国大学生电子设计竞赛省级三等奖
+                                                                </option>
+                                                                <option value="齐鲁大学生软件大赛省级一等奖">齐鲁大学生软件大赛省级一等奖</option>
+                                                                <option value="齐鲁大学生软件大赛省级二等奖">齐鲁大学生软件大赛省级二等奖</option>
+                                                                <option value="齐鲁大学生软件大赛省级三等奖">齐鲁大学生软件大赛省级三等奖</option>
+                                                                <option value="大学生物理科技创新大赛省级一等奖">
+                                                                    山东省大学生物理科技创新大赛省级一等奖
+                                                                </option>
+                                                                <option value="大学生物理科技创新大赛省级二等奖">
+                                                                    山东省大学生物理科技创新大赛省级二等奖
+                                                                </option>
+                                                                <option value="大学生物理科技创新大赛省级三等奖">
+                                                                    山东省大学生物理科技创新大赛省级三等奖
+                                                                </option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-10 col-sm-offset-1">
+                                            <div class="input-group">
+                                                <span class="input-group input-group-addon">
+                                                    <label>奖项二  </label>
+                                                </span>
+                                                <div class="form-group label-floating" style="width:115px;">
+                                                    <div class="form-group label-floating">
+                                                        <div class="form-group label-floating">
+                                                            <label class="control-label">Award Name</label>
+                                                            <select name="stu_awardname2" class="form-control"
+                                                                    style="width:360px">
+                                                                <option value="">无</option>
+                                                                <option value="国家奖学金">国家奖学金</option>
+                                                                <option value="国家励志奖学金">国家励志奖学金</option>
+                                                                <option value="山东大学（威海）优秀团员">
+                                                                    山东大学（威海）优秀团员（2015、2016）
+                                                                </option>
+                                                                <option value="山东大学（威海）校级三好学生">
+                                                                    山东大学（威海）校级三好学生（2015、2016）
+                                                                </option>
+                                                                <option value="山东大学（威海）校级优秀学生干部">
+                                                                    山东大学（威海）校级优秀学生干部（2015、2016）
+                                                                </option>
+                                                                <option value="优秀学生一等奖学金">
+                                                                    山东大学（威海）优秀学生一等奖学金（2015、2016）
+                                                                </option>
+                                                                <option value="优秀学生二等奖学金">
+                                                                    山东大学（威海）优秀学生二等奖学金（2015、2016）
+                                                                </option>
+                                                                <option value="优秀学生三等奖学金">
+                                                                    山东大学（威海）优秀学生三等奖学金（2015、2016）
+                                                                </option>
+                                                                <option value="山东大学（威海）一等学业奖学金">
+                                                                    山东大学（威海）一等学业奖学金（2017）
+                                                                </option>
+                                                                <option value="山东大学（威海）二等学业奖学金">
+                                                                    山东大学（威海）二等学业奖学金（2017）
+                                                                </option>
+                                                                <option value="山东大学（威海）三等学业奖学金">
+                                                                    山东大学（威海）三等学业奖学金（2017）
+                                                                </option>
+                                                                <option value="研究创新奖学金">研究创新奖学金（2017）</option>
+                                                                <option value="创业实践奖学金">创业实践奖学金（2017）</option>
+                                                                <option value="社会服务奖学金">社会服务奖学金（2017）</option>
+                                                                <option value="美育素养奖学金">美育素养奖学金（2017）</option>
+                                                                <option value="体育素养奖学金">体育素养奖学金（2017）</option>
+                                                                <option value="学科特色奖学金">学科特色奖学金（2017）</option>
+                                                                <option value="山东省高等学校优秀学生">山东省高等学校优秀学生</option>
+                                                                <option value="山东省高等学校优秀学生干部">山东省高等学校优秀学生干部</option>
+                                                                {#                                                                <option value="“互联网+”大学生创新创业大赛国家银奖">#}
+                                                                {#                                                                    “互联网+”大学生创新创业大赛国家银奖#}
+                                                                {#                                                                </option>#}
+                                                                {#                                                                <option value="“互联网+”大学生创新创业大赛国家银奖">#}
+                                                                {#                                                                    “互联网+”大学生创新创业大赛国家银奖#}
+                                                                {#                                                                </option>#}
+                                                                {#                                                                <option value="“互联网+”大学生创新创业大赛国家铜奖">#}
+                                                                {#                                                                    “互联网+”大学生创新创业大赛国家铜奖#}
+                                                                {#                                                                </option>#}
+                                                                {#                                                                <option value="“挑战杯”大学生创业计划竞赛国家级一等奖">#}
+                                                                {#                                                                    “挑战杯”大学生创业计划竞赛国家级一等奖#}
+                                                                {#                                                                </option>#}
+                                                                {#                                                                <option value="“挑战杯”大学生创业计划竞赛国家级二等奖">#}
+                                                                {#                                                                    “挑战杯”大学生创业计划竞赛国家级二等奖#}
+                                                                {#                                                                </option>#}
+                                                                {#                                                                <option value="“挑战杯”大学生创业计划竞赛国家级三等奖">#}
+                                                                {#                                                                    “挑战杯”大学生创业计划竞赛国家级三等奖#}
+                                                                {#                                                                </option>#}
+                                                                <option value="“创青春”大学生创业大赛省级金奖">“创青春”山东省大学生创业大赛金奖
+                                                                </option>
+                                                                <option value="“创青春”大学生创业大赛省级银奖">“创青春”山东省大学生创业大赛银奖
+                                                                </option>
+                                                                <option value="“创青春”大学生创业大赛省级铜奖">“创青春”山东省大学生创业大赛铜奖
+                                                                </option>
+                                                                <option value="大学生思想政治风采大赛校级一等奖">大学生思想政治风采大赛校级一等奖
+                                                                </option>
+                                                                <option value="大学生思想政治风采大赛校级二等奖">大学生思想政治风采大赛校级二等奖
+                                                                </option>
+                                                                <option value="大学生思想政治风采大赛校级三等奖">大学生思想政治风采大赛校级三等奖
+                                                                </option>
+                                                                <option value="全国大学生数学建模竞赛国家一等奖">全国大学生数学建模竞赛国家一等奖
+                                                                </option>
+                                                                <option value="全国大学生数学建模竞赛国家二等奖">全国大学生数学建模竞赛国家二等奖
+                                                                </option>
+                                                                <option value="全国大学生数学建模竞赛省级一等奖">全国大学生数学建模竞赛省级一等奖
+                                                                </option>
+                                                                <option value="全国大学生数学建模竞赛省级二等奖">全国大学生数学建模竞赛省级二等奖
+                                                                </option>
+                                                                <option value="全国大学生英语竞赛B类一等奖">全国大学生英语竞赛B类一等奖</option>
+                                                                <option value="全国大学生英语竞赛B类二等奖">全国大学生英语竞赛B类二等奖</option>
+                                                                <option value="全国大学生英语竞赛B类三等奖">全国大学生英语竞赛B类三等奖</option>
+                                                                <option value="全国大学生英语竞赛C类一等奖">全国大学生英语竞赛C类一等奖</option>
+                                                                <option value="全国大学生英语竞赛C类二等奖">全国大学生英语竞赛C类二等奖</option>
+                                                                <option value="全国大学生英语竞赛C类三等奖">全国大学生英语竞赛C类三等奖</option>
+                                                                <option value="全国大学生英语竞赛D类一等奖">全国大学生英语竞赛D类一等奖</option>
+                                                                <option value="全国大学生英语竞赛D类二等奖">全国大学生英语竞赛D类二等奖</option>
+                                                                <option value="全国大学生英语竞赛D类三等奖">全国大学生英语竞赛D类三等奖</option>
+                                                                <option value="全国大学生智能汽车竞赛省级一等奖">全国大学生智能汽车竞赛省级一等奖
+                                                                </option>
+                                                                <option value="全国大学生智能汽车竞赛省级二等奖">全国大学生智能汽车竞赛省级二等奖
+                                                                </option>
+                                                                <option value="全国大学生智能汽车竞赛省级三等奖">全国大学生智能汽车竞赛省级三等奖
+                                                                </option>
+                                                                {#                                                                <option value="大学生机电产品创新设计竞赛省级一等奖">#}
+                                                                {#                                                                    山东省大学生机电产品创新设计竞赛省级一等奖#}
+                                                                {#                                                                </option>#}
+                                                                {#                                                                <option value="大学生机电产品创新设计竞赛省级二等奖">#}
+                                                                {#                                                                    山东省大学生机电产品创新设计竞赛省级二等奖#}
+                                                                {#                                                                </option>#}
+                                                                {#                                                                <option value="大学生机电产品创新设计竞赛省级三等奖">#}
+                                                                {#                                                                    山东省大学生机电产品创新设计竞赛省级三等奖#}
+                                                                {#                                                                </option>#}
+                                                                {#                                                                <option value="中国机器人大赛暨RoboCup公开赛全国一等奖">#}
+                                                                {#                                                                    中国机器人大赛暨RoboCup公开赛全国一等奖#}
+                                                                {#                                                                </option>#}
+                                                                {#                                                                <option value="中国机器人大赛暨RoboCup公开赛全国二等奖">#}
+                                                                {#                                                                    中国机器人大赛暨RoboCup公开赛全国二等奖#}
+                                                                {#                                                                </option>#}
+                                                                {#                                                                <option value="中国机器人大赛暨RoboCup公开赛全国三等奖">#}
+                                                                {#                                                                    中国机器人大赛暨RoboCup公开赛全国三等奖#}
+                                                                {#                                                                </option>#}
+                                                                <option value="全国大学生电子设计竞赛省级一等奖">全国大学生电子设计竞赛省级一等奖
+                                                                </option>
+                                                                <option value="全国大学生电子设计竞赛省级二等奖">全国大学生电子设计竞赛省级二等奖
+                                                                </option>
+                                                                <option value="全国大学生电子设计竞赛省级三等奖">全国大学生电子设计竞赛省级三等奖
+                                                                </option>
+                                                                <option value="齐鲁大学生软件大赛省级一等奖">齐鲁大学生软件大赛省级一等奖</option>
+                                                                <option value="齐鲁大学生软件大赛省级二等奖">齐鲁大学生软件大赛省级二等奖</option>
+                                                                <option value="齐鲁大学生软件大赛省级三等奖">齐鲁大学生软件大赛省级三等奖</option>
+                                                                <option value="大学生物理科技创新大赛省级一等奖">
+                                                                    山东省大学生物理科技创新大赛省级一等奖
+                                                                </option>
+                                                                <option value="大学生物理科技创新大赛省级二等奖">
+                                                                    山东省大学生物理科技创新大赛省级二等奖
+                                                                </option>
+                                                                <option value="大学生物理科技创新大赛省级三等奖">
+                                                                    山东省大学生物理科技创新大赛省级三等奖
+                                                                </option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-10 col-sm-offset-1">
+                                            <div class="input-group">
+                                                <span class="input-group input-group-addon">
+                                                    <label>奖项三</label>
+                                                </span>
+                                                <div class="form-group label-floating" style="width:115px;">
+                                                    <div class="form-group label-floating">
+                                                        <div class="form-group label-floating">
+                                                            <label class="control-label">Award Name</label>
+                                                            <select name="stu_awardname3" class="form-control"
+                                                                    style="width:360px">
+                                                                <option value="">无</option>
+                                                                <option value="国家奖学金">国家奖学金</option>
+                                                                <option value="国家励志奖学金">国家励志奖学金</option>
+                                                                <option value="山东大学（威海）优秀团员">
+                                                                    山东大学（威海）优秀团员（2015、2016）
+                                                                </option>
+                                                                <option value="山东大学（威海）校级三好学生">
+                                                                    山东大学（威海）校级三好学生（2015、2016）
+                                                                </option>
+                                                                <option value="山东大学（威海）校级优秀学生干部">
+                                                                    山东大学（威海）校级优秀学生干部（2015、2016）
+                                                                </option>
+                                                                <option value="优秀学生一等奖学金">
+                                                                    山东大学（威海）优秀学生一等奖学金（2015、2016）
+                                                                </option>
+                                                                <option value="优秀学生二等奖学金">
+                                                                    山东大学（威海）优秀学生二等奖学金（2015、2016）
+                                                                </option>
+                                                                <option value="优秀学生三等奖学金">
+                                                                    山东大学（威海）优秀学生三等奖学金（2015、2016）
+                                                                </option>
+                                                                <option value="山东大学（威海）一等学业奖学金">
+                                                                    山东大学（威海）一等学业奖学金（2017）
+                                                                </option>
+                                                                <option value="山东大学（威海）二等学业奖学金">
+                                                                    山东大学（威海）二等学业奖学金（2017）
+                                                                </option>
+                                                                <option value="山东大学（威海）三等学业奖学金">
+                                                                    山东大学（威海）三等学业奖学金（2017）
+                                                                </option>
+                                                                <option value="研究创新奖学金">研究创新奖学金（2017）</option>
+                                                                <option value="创业实践奖学金">创业实践奖学金（2017）</option>
+                                                                <option value="社会服务奖学金">社会服务奖学金（2017）</option>
+                                                                <option value="美育素养奖学金">美育素养奖学金（2017）</option>
+                                                                <option value="体育素养奖学金">体育素养奖学金（2017）</option>
+                                                                <option value="学科特色奖学金">学科特色奖学金（2017）</option>
+                                                                <option value="山东省高等学校优秀学生">山东省高等学校优秀学生</option>
+                                                                <option value="山东省高等学校优秀学生干部">山东省高等学校优秀学生干部</option>
+                                                                {#                                                                <option value="“互联网+”大学生创新创业大赛国家银奖">#}
+                                                                {#                                                                    “互联网+”大学生创新创业大赛国家银奖#}
+                                                                {#                                                                </option>#}
+                                                                {#                                                                <option value="“互联网+”大学生创新创业大赛国家银奖">#}
+                                                                {#                                                                    “互联网+”大学生创新创业大赛国家银奖#}
+                                                                {#                                                                </option>#}
+                                                                {#                                                                <option value="“互联网+”大学生创新创业大赛国家铜奖">#}
+                                                                {#                                                                    “互联网+”大学生创新创业大赛国家铜奖#}
+                                                                {#                                                                </option>#}
+                                                                {#                                                                <option value="“挑战杯”大学生创业计划竞赛国家级一等奖">#}
+                                                                {#                                                                    “挑战杯”大学生创业计划竞赛国家级一等奖#}
+                                                                {#                                                                </option>#}
+                                                                {#                                                                <option value="“挑战杯”大学生创业计划竞赛国家级二等奖">#}
+                                                                {#                                                                    “挑战杯”大学生创业计划竞赛国家级二等奖#}
+                                                                {#                                                                </option>#}
+                                                                {#                                                                <option value="“挑战杯”大学生创业计划竞赛国家级三等奖">#}
+                                                                {#                                                                    “挑战杯”大学生创业计划竞赛国家级三等奖#}
+                                                                {#                                                                </option>#}
+                                                                <option value="“创青春”大学生创业大赛省级金奖">“创青春”山东省大学生创业大赛金奖
+                                                                </option>
+                                                                <option value="“创青春”大学生创业大赛省级银奖">“创青春”山东省大学生创业大赛银奖
+                                                                </option>
+                                                                <option value="“创青春”大学生创业大赛省级铜奖">“创青春”山东省大学生创业大赛铜奖
+                                                                </option>
+                                                                <option value="大学生思想政治风采大赛校级一等奖">大学生思想政治风采大赛校级一等奖
+                                                                </option>
+                                                                <option value="大学生思想政治风采大赛校级二等奖">大学生思想政治风采大赛校级二等奖
+                                                                </option>
+                                                                <option value="大学生思想政治风采大赛校级三等奖">大学生思想政治风采大赛校级三等奖
+                                                                </option>
+                                                                <option value="全国大学生数学建模竞赛国家一等奖">全国大学生数学建模竞赛国家一等奖
+                                                                </option>
+                                                                <option value="全国大学生数学建模竞赛国家二等奖">全国大学生数学建模竞赛国家二等奖
+                                                                </option>
+                                                                <option value="全国大学生数学建模竞赛省级一等奖">全国大学生数学建模竞赛省级一等奖
+                                                                </option>
+                                                                <option value="全国大学生数学建模竞赛省级二等奖">全国大学生数学建模竞赛省级二等奖
+                                                                </option>
+                                                                <option value="全国大学生英语竞赛B类一等奖">全国大学生英语竞赛B类一等奖</option>
+                                                                <option value="全国大学生英语竞赛B类二等奖">全国大学生英语竞赛B类二等奖</option>
+                                                                <option value="全国大学生英语竞赛B类三等奖">全国大学生英语竞赛B类三等奖</option>
+                                                                <option value="全国大学生英语竞赛C类一等奖">全国大学生英语竞赛C类一等奖</option>
+                                                                <option value="全国大学生英语竞赛C类二等奖">全国大学生英语竞赛C类二等奖</option>
+                                                                <option value="全国大学生英语竞赛C类三等奖">全国大学生英语竞赛C类三等奖</option>
+                                                                <option value="全国大学生英语竞赛D类一等奖">全国大学生英语竞赛D类一等奖</option>
+                                                                <option value="全国大学生英语竞赛D类二等奖">全国大学生英语竞赛D类二等奖</option>
+                                                                <option value="全国大学生英语竞赛D类三等奖">全国大学生英语竞赛D类三等奖</option>
+                                                                <option value="全国大学生智能汽车竞赛省级一等奖">全国大学生智能汽车竞赛省级一等奖
+                                                                </option>
+                                                                <option value="全国大学生智能汽车竞赛省级二等奖">全国大学生智能汽车竞赛省级二等奖
+                                                                </option>
+                                                                <option value="全国大学生智能汽车竞赛省级三等奖">全国大学生智能汽车竞赛省级三等奖
+                                                                </option>
+                                                                {#                                                                <option value="大学生机电产品创新设计竞赛省级一等奖">#}
+                                                                {#                                                                    山东省大学生机电产品创新设计竞赛省级一等奖#}
+                                                                {#                                                                </option>#}
+                                                                {#                                                                <option value="大学生机电产品创新设计竞赛省级二等奖">#}
+                                                                {#                                                                    山东省大学生机电产品创新设计竞赛省级二等奖#}
+                                                                {#                                                                </option>#}
+                                                                {#                                                                <option value="大学生机电产品创新设计竞赛省级三等奖">#}
+                                                                {#                                                                    山东省大学生机电产品创新设计竞赛省级三等奖#}
+                                                                {#                                                                </option>#}
+                                                                {#                                                                <option value="中国机器人大赛暨RoboCup公开赛全国一等奖">#}
+                                                                {#                                                                    中国机器人大赛暨RoboCup公开赛全国一等奖#}
+                                                                {#                                                                </option>#}
+                                                                {#                                                                <option value="中国机器人大赛暨RoboCup公开赛全国二等奖">#}
+                                                                {#                                                                    中国机器人大赛暨RoboCup公开赛全国二等奖#}
+                                                                {#                                                                </option>#}
+                                                                {#                                                                <option value="中国机器人大赛暨RoboCup公开赛全国三等奖">#}
+                                                                {#                                                                    中国机器人大赛暨RoboCup公开赛全国三等奖#}
+                                                                {#                                                                </option>#}
+                                                                <option value="全国大学生电子设计竞赛省级一等奖">全国大学生电子设计竞赛省级一等奖
+                                                                </option>
+                                                                <option value="全国大学生电子设计竞赛省级二等奖">全国大学生电子设计竞赛省级二等奖
+                                                                </option>
+                                                                <option value="全国大学生电子设计竞赛省级三等奖">全国大学生电子设计竞赛省级三等奖
+                                                                </option>
+                                                                <option value="齐鲁大学生软件大赛省级一等奖">齐鲁大学生软件大赛省级一等奖</option>
+                                                                <option value="齐鲁大学生软件大赛省级二等奖">齐鲁大学生软件大赛省级二等奖</option>
+                                                                <option value="齐鲁大学生软件大赛省级三等奖">齐鲁大学生软件大赛省级三等奖</option>
+                                                                <option value="大学生物理科技创新大赛省级一等奖">
+                                                                    山东省大学生物理科技创新大赛省级一等奖
+                                                                </option>
+                                                                <option value="大学生物理科技创新大赛省级二等奖">
+                                                                    山东省大学生物理科技创新大赛省级二等奖
+                                                                </option>
+                                                                <option value="大学生物理科技创新大赛省级三等奖">
+                                                                    山东省大学生物理科技创新大赛省级三等奖
+                                                                </option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-10 col-sm-offset-1">
+                                            <div class="input-group">
+                                                <span class="input-group input-group-addon">
+                                                    <label>奖项四</label>
+                                                </span>
+                                                <div class="form-group label-floating" style="width:115px;">
+                                                    <div class="form-group label-floating">
+                                                        <div class="form-group label-floating">
+                                                            <label class="control-label">Award Name</label>
+                                                            <select name="stu_awardname4" class="form-control"
+                                                                    style="width:360px">
+                                                                <option value="">无</option>
+                                                                <option value="国家奖学金">国家奖学金</option>
+                                                                <option value="国家励志奖学金">国家励志奖学金</option>
+                                                                <option value="山东大学（威海）优秀团员">
+                                                                    山东大学（威海）优秀团员（2015、2016）
+                                                                </option>
+                                                                <option value="山东大学（威海）校级三好学生">
+                                                                    山东大学（威海）校级三好学生（2015、2016）
+                                                                </option>
+                                                                <option value="山东大学（威海）校级优秀学生干部">
+                                                                    山东大学（威海）校级优秀学生干部（2015、2016）
+                                                                </option>
+                                                                <option value="优秀学生一等奖学金">
+                                                                    山东大学（威海）优秀学生一等奖学金（2015、2016）
+                                                                </option>
+                                                                <option value="优秀学生二等奖学金">
+                                                                    山东大学（威海）优秀学生二等奖学金（2015、2016）
+                                                                </option>
+                                                                <option value="优秀学生三等奖学金">
+                                                                    山东大学（威海）优秀学生三等奖学金（2015、2016）
+                                                                </option>
+                                                                <option value="山东大学（威海）一等学业奖学金">
+                                                                    山东大学（威海）一等学业奖学金（2017）
+                                                                </option>
+                                                                <option value="山东大学（威海）二等学业奖学金">
+                                                                    山东大学（威海）二等学业奖学金（2017）
+                                                                </option>
+                                                                <option value="山东大学（威海）三等学业奖学金">
+                                                                    山东大学（威海）三等学业奖学金（2017）
+                                                                </option>
+                                                                <option value="研究创新奖学金">研究创新奖学金（2017）</option>
+                                                                <option value="创业实践奖学金">创业实践奖学金（2017）</option>
+                                                                <option value="社会服务奖学金">社会服务奖学金（2017）</option>
+                                                                <option value="美育素养奖学金">美育素养奖学金（2017）</option>
+                                                                <option value="体育素养奖学金">体育素养奖学金（2017）</option>
+                                                                <option value="学科特色奖学金">学科特色奖学金（2017）</option>
+                                                                <option value="山东省高等学校优秀学生">山东省高等学校优秀学生</option>
+                                                                <option value="山东省高等学校优秀学生干部">山东省高等学校优秀学生干部</option>
+                                                                {#                                                                <option value="“互联网+”大学生创新创业大赛国家银奖">#}
+                                                                {#                                                                    “互联网+”大学生创新创业大赛国家银奖#}
+                                                                {#                                                                </option>#}
+                                                                {#                                                                <option value="“互联网+”大学生创新创业大赛国家银奖">#}
+                                                                {#                                                                    “互联网+”大学生创新创业大赛国家银奖#}
+                                                                {#                                                                </option>#}
+                                                                {#                                                                <option value="“互联网+”大学生创新创业大赛国家铜奖">#}
+                                                                {#                                                                    “互联网+”大学生创新创业大赛国家铜奖#}
+                                                                {#                                                                </option>#}
+                                                                {#                                                                <option value="“挑战杯”大学生创业计划竞赛国家级一等奖">#}
+                                                                {#                                                                    “挑战杯”大学生创业计划竞赛国家级一等奖#}
+                                                                {#                                                                </option>#}
+                                                                {#                                                                <option value="“挑战杯”大学生创业计划竞赛国家级二等奖">#}
+                                                                {#                                                                    “挑战杯”大学生创业计划竞赛国家级二等奖#}
+                                                                {#                                                                </option>#}
+                                                                {#                                                                <option value="“挑战杯”大学生创业计划竞赛国家级三等奖">#}
+                                                                {#                                                                    “挑战杯”大学生创业计划竞赛国家级三等奖#}
+                                                                {#                                                                </option>#}
+                                                                <option value="“创青春”大学生创业大赛省级金奖">“创青春”山东省大学生创业大赛金奖
+                                                                </option>
+                                                                <option value="“创青春”大学生创业大赛省级银奖">“创青春”山东省大学生创业大赛银奖
+                                                                </option>
+                                                                <option value="“创青春”大学生创业大赛省级铜奖">“创青春”山东省大学生创业大赛铜奖
+                                                                </option>
+                                                                <option value="大学生思想政治风采大赛校级一等奖">大学生思想政治风采大赛校级一等奖
+                                                                </option>
+                                                                <option value="大学生思想政治风采大赛校级二等奖">大学生思想政治风采大赛校级二等奖
+                                                                </option>
+                                                                <option value="大学生思想政治风采大赛校级三等奖">大学生思想政治风采大赛校级三等奖
+                                                                </option>
+                                                                <option value="全国大学生数学建模竞赛国家一等奖">全国大学生数学建模竞赛国家一等奖
+                                                                </option>
+                                                                <option value="全国大学生数学建模竞赛国家二等奖">全国大学生数学建模竞赛国家二等奖
+                                                                </option>
+                                                                <option value="全国大学生数学建模竞赛省级一等奖">全国大学生数学建模竞赛省级一等奖
+                                                                </option>
+                                                                <option value="全国大学生数学建模竞赛省级二等奖">全国大学生数学建模竞赛省级二等奖
+                                                                </option>
+                                                                <option value="全国大学生英语竞赛B类一等奖">全国大学生英语竞赛B类一等奖</option>
+                                                                <option value="全国大学生英语竞赛B类二等奖">全国大学生英语竞赛B类二等奖</option>
+                                                                <option value="全国大学生英语竞赛B类三等奖">全国大学生英语竞赛B类三等奖</option>
+                                                                <option value="全国大学生英语竞赛C类一等奖">全国大学生英语竞赛C类一等奖</option>
+                                                                <option value="全国大学生英语竞赛C类二等奖">全国大学生英语竞赛C类二等奖</option>
+                                                                <option value="全国大学生英语竞赛C类三等奖">全国大学生英语竞赛C类三等奖</option>
+                                                                <option value="全国大学生英语竞赛D类一等奖">全国大学生英语竞赛D类一等奖</option>
+                                                                <option value="全国大学生英语竞赛D类二等奖">全国大学生英语竞赛D类二等奖</option>
+                                                                <option value="全国大学生英语竞赛D类三等奖">全国大学生英语竞赛D类三等奖</option>
+                                                                <option value="全国大学生智能汽车竞赛省级一等奖">全国大学生智能汽车竞赛省级一等奖
+                                                                </option>
+                                                                <option value="全国大学生智能汽车竞赛省级二等奖">全国大学生智能汽车竞赛省级二等奖
+                                                                </option>
+                                                                <option value="全国大学生智能汽车竞赛省级三等奖">全国大学生智能汽车竞赛省级三等奖
+                                                                </option>
+                                                                {#                                                                <option value="大学生机电产品创新设计竞赛省级一等奖">#}
+                                                                {#                                                                    山东省大学生机电产品创新设计竞赛省级一等奖#}
+                                                                {#                                                                </option>#}
+                                                                {#                                                                <option value="大学生机电产品创新设计竞赛省级二等奖">#}
+                                                                {#                                                                    山东省大学生机电产品创新设计竞赛省级二等奖#}
+                                                                {#                                                                </option>#}
+                                                                {#                                                                <option value="大学生机电产品创新设计竞赛省级三等奖">#}
+                                                                {#                                                                    山东省大学生机电产品创新设计竞赛省级三等奖#}
+                                                                {#                                                                </option>#}
+                                                                {#                                                                <option value="中国机器人大赛暨RoboCup公开赛全国一等奖">#}
+                                                                {#                                                                    中国机器人大赛暨RoboCup公开赛全国一等奖#}
+                                                                {#                                                                </option>#}
+                                                                {#                                                                <option value="中国机器人大赛暨RoboCup公开赛全国二等奖">#}
+                                                                {#                                                                    中国机器人大赛暨RoboCup公开赛全国二等奖#}
+                                                                {#                                                                </option>#}
+                                                                {#                                                                <option value="中国机器人大赛暨RoboCup公开赛全国三等奖">#}
+                                                                {#                                                                    中国机器人大赛暨RoboCup公开赛全国三等奖#}
+                                                                {#                                                                </option>#}
+                                                                <option value="全国大学生电子设计竞赛省级一等奖">全国大学生电子设计竞赛省级一等奖
+                                                                </option>
+                                                                <option value="全国大学生电子设计竞赛省级二等奖">全国大学生电子设计竞赛省级二等奖
+                                                                </option>
+                                                                <option value="全国大学生电子设计竞赛省级三等奖">全国大学生电子设计竞赛省级三等奖
+                                                                </option>
+                                                                <option value="齐鲁大学生软件大赛省级一等奖">齐鲁大学生软件大赛省级一等奖</option>
+                                                                <option value="齐鲁大学生软件大赛省级二等奖">齐鲁大学生软件大赛省级二等奖</option>
+                                                                <option value="齐鲁大学生软件大赛省级三等奖">齐鲁大学生软件大赛省级三等奖</option>
+                                                                <option value="大学生物理科技创新大赛省级一等奖">
+                                                                    山东省大学生物理科技创新大赛省级一等奖
+                                                                </option>
+                                                                <option value="大学生物理科技创新大赛省级二等奖">
+                                                                    山东省大学生物理科技创新大赛省级二等奖
+                                                                </option>
+                                                                <option value="大学生物理科技创新大赛省级三等奖">
+                                                                    山东省大学生物理科技创新大赛省级三等奖
+                                                                </option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="tab-pane" id="reason">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <h4 class="info-text"> 申请理由 </h4>
+                                        </div>
+                                        <div class="wordCount" id="wordCount">
+                                        <textarea rows="8" name="stu_reason1" class="reasonform"
+                                                  placeholder="请输入你的申请理由（190字至200字）." required></textarea>
+                                            <span class="wordwrap"><var class="word">200</var>/200</span>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <h4 class="info-text"> 推荐理由 </h4>
+                                        </div>
+                                        <div class="wordCount1" id="wordCount1">
+                                        <textarea rows="4" name="stu_reason2" class="reasonform"
+                                                  placeholder="请输入推荐理由（90字至100字）."></textarea>
+                                            <span class="wordwrap"><var class="word">100</var>/100</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <h4 class="info-text"> 院系意见 </h4>
+                                        </div>
+                                        <div class="wordCount1" id="wordCount1">
+                                        <textarea rows="2" name="stu_reason3" class="reasonform"
+                                                  placeholder="请输入院系意见."></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wizard-footer">
+                                <div class="pull-right">
+                                    <input type='button' class='btn btn-next btn-fill btn-success btn-wd'
+                                           name='next' value='下一页'/>
+                                    <input type='button' class='btn btn-finish btn-fill btn-success btn-wd'
+                                           name='finish' value='提交'
+                                           onclick="if(checkdata()) {submit();}"
+                                    />
+                                </div>
+                                <div class="pull-left">
+                                    <input type='button' class='btn btn-previous btn-fill btn-default btn-wd'
+                                           name='Previous' value='前一页'/>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div> <!-- wizard container -->
+            </div>
+        </div><!-- end row -->
+    </div> <!--  big container -->
+
+    <div class="footer">
+        <div class="container text-center">
+            made by <i class="fa fa-heart heart"></i> <a href="https://csic.wh.sdu.edu.cn/">Three Corgi</a>.</a>
+        </div>
+    </div>
+</div>
+
+</body>
+<!--   Core JS Files   -->
+<script src="/assets/js/jquery-2.2.4.min.js" type="text/javascript"></script>
+<script src="/assets/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="/assets/js/jquery.bootstrap.js" type="text/javascript"></script>
+
+<!--  Plugin for the Wizard -->
+<script src="/assets/js/material-bootstrap-wizard.js"></script>
+
+<!--  More information about jquery.validate here: http://jqueryvalidation.org/	 -->
+<script src="/assets/js/jquery.validate.min.js"></script>
+
+</html>
