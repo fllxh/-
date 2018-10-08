@@ -1,5 +1,4 @@
 import csv
-import os
 
 from django.shortcuts import HttpResponse
 from django.shortcuts import render
@@ -7,8 +6,6 @@ from django.utils.http import urlquote
 
 from JamAssistant import data2doc
 from JamAssistant.Jamconfig import *
-
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 # Create your views here.

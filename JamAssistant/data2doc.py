@@ -94,6 +94,10 @@ def data2xml(data_dic, filename):
     with open(template_path, 'r', encoding='utf-8') as template:
         doc = template.read()
         for item in data_dic:
+            if data_dic[item].endswith("2016") or \
+                    data_dic[item].endswith("2017") or \
+                    data_dic[item].endswith("2018"):
+                data_dic[item] = data_dic[item][:-4]
 
             if data_dic[item] is None:
                 data_dic[item] = ''

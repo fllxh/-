@@ -267,6 +267,11 @@ $(function () {
         word1 = wordCount1.find(".word");
 //调用
     statInputNum(textArea1, word1);
+    var wordCount2 = $("#wordCount2"),
+        textArea2 = wordCount2.find("textarea"),
+        word2 = wordCount2.find(".word");
+//调用
+    statInputNum(textArea2, word2);
 });
 
 function statInputNum(textArea, numItem) {
@@ -427,7 +432,7 @@ function checkdata() {
     }
 
     var stu_reason3 = document.getElementsByName("stu_reason3")[0].value;
-    if (stu_reason3.length > 200) {
+    if (stu_reason3.replace(/[\ |\，|\。|\！|\？|\：|\￥|\%|\、|\“|\”|\（|\）|\；\-|\_|\+|\=|\||\\|\[|\]|\{|\}|\;|\:|\"|\'|\,|\<|\.|\>|\/|\?]/g, "").length > 100) {
         alert('院系意见过长，请修改后重试!');
         pass = false;
     }

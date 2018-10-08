@@ -63,6 +63,22 @@ body, a {
     padding: 0 4px;;
 }
 
+.wordCount2 {
+    position: relative;
+    width: 600px;
+}
+
+.wordCount2 .wordwrap {
+    position: absolute;
+    right: 6px;
+    bottom: 6px;
+}
+
+.wordCount2 .word {
+    color: #af1a2d;
+    padding: 0 4px;;
+}
+
 textarea:hover {
     border-color: #ff4548;
 }
