@@ -272,24 +272,17 @@ $(function () {
 function statInputNum(textArea, numItem) {
     var max = numItem.text(),
         curLength;
-    textArea[0].setAttribute("maxlength", max);
     curLength = textArea.val().length;
     numItem.text(max - curLength);
     textArea.on('input propertychange', function () {
-        if (max - $(this).val().length < 0)
+        var curComNum = $(this).val().length - $(this).val().replace(/[\ |\，|\。|\！|\？|\：|\￥|\%|\、|\“|\”|\（|\）|\；\-|\_|\+|\=|\||\\|\[|\]|\{|\}|\;|\:|\"|\'|\,|\<|\.|\>|\/|\?]/g, "")
+            .length;
+        textArea[0].setAttribute("maxlength", parseInt(max) + parseInt(curComNum));
+        if (max - $(this).val().length + curComNum < 0)
             numItem.text(0);
         else
-            numItem.text(max - $(this).val().length);
+            numItem.text(max - $(this).val().length + curComNum);
     });
-}
-
-function isCardNo(card) {
-    // 身份证号码为15位或者18位，15位时全为数字，18位前17位为数字，最后一位是校验位，可能为数字或字符X
-    var reg = /(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/;
-    if (reg.test(card) === false) {
-        alert("身份证输入不合法");
-        return false;
-    }
 }
 
 document.onkeydown = function (evt) {

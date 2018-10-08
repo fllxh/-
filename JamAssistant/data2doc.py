@@ -5,11 +5,11 @@ from JamAssistant.Jamconfig import *
 
 testdata_dic = {'编号': '001', '院系': '机电与信息工程', '学号': '201600800481',
                 '姓名': '李威宇', '性别': '男', '出生年月': '1998.10.31',
-                '政治面貌': '团员', '民族': '汉族', '入学时间': '2019.9',
+                '政治面貌': '中共预备党员', '民族': '汉族', '入学时间': '2019.9',
                 '专业': '计算机科学与技术（中澳合作）', '学制': '四年制', '联系电话': '15608291615',
                 '身份证号': '513701199810311715',
                 '名次': '10', '总人数': '110', '必修课': '10', '及格': '10', '综合排名': '2', '综合总人数': '110',
-                '获奖时间一': '2017', '奖项名称一': '蓝桥杯', '颁奖单位一': '蓝桥杯组委会',
+                '获奖时间一': '2017', '奖项名称一': '山东大学（威海）优秀学生一等奖学金', '颁奖单位一': '蓝桥杯组委会',
                 '获奖时间二': '2018', '奖项名称二': '蓝桥杯1', '颁奖单位二': '蓝桥杯组委会1',
                 '获奖时间三': '2019', '奖项名称三': '蓝桥杯2', '颁奖单位三': '蓝桥杯组委会2',
                 '获奖时间四': '2020', '奖项名称四': '蓝桥杯3', '颁奖单位四': '蓝桥杯组委会3',
@@ -27,15 +27,18 @@ template_dic = {'编号': '@No', '院系': '所在院系模板', '学号': '学�
                 '获奖时间四': '获奖四', '奖项名称四': '奖项名称四', '颁奖单位四': '颁奖单位四',
                 '申请理由': '申请理由模板', '推荐理由': '推荐理由模板', '院系意见': '院系意见模板'
                 }
-major_dic = {'机械设计制造及其自动化': '22',
-             '机械设计制造及其自动化（中澳合作）': '16',
-             '计算机科学与技术（中澳合作）': '20'
-             }
+font_dic = {'机械设计制造及其自动化': '22',
+            '机械设计制造及其自动化（中澳合作）': '16',
+            '计算机科学与技术（中澳合作）': '20',
+            '山东大学（威海）优秀学生一等奖学金': '22',
+            '山东大学（威海）优秀学生二等奖学金': '22',
+            '山东大学（威海）优秀学生三等奖学金': '22'
+            }
 
 
 def super_replace(doc, item, key_word, font_size):
     # super_temp = '<w:r><w:rPr><w:rFonts w:hint="eastAsia"/><w:sz w:val="24"/></w:rPr><w:t>' + item + '</w:t></w:r>'
-    super_temp = '<w:sz w:val="24"/></w:rPr><w:t>专业模板</w:t></w:r>'
+    super_temp = '<w:sz w:val="24"/></w:rPr><w:t>' + item + '</w:t></w:r>'
     super_str = super_temp.replace('24', font_size)
     super_str = super_str.replace(item, key_word)
 
@@ -96,10 +99,14 @@ def data2xml(data_dic, filename):
             elif item == '身份证号':
                 for i in range(len(data_dic[item]) - 1, -1, -1):
                     doc = doc.replace('I' + str(i + 1), data_dic[item][i])
-            elif item == '专业' and (data_dic['专业'] == '机械设计制造及其自动化' or
-                                   data_dic['专业'] == '机械设计制造及其自动化（中澳合作）' or
-                                   data_dic['专业'] == '计算机科学与技术（中澳合作）'):
-                doc = super_replace(doc, template_dic[item], data_dic['专业'], major_dic[data_dic['专业']])
+            elif item == '专业' and (data_dic[item] == '机械设计制造及其自动化' or
+                                   data_dic[item] == '机械设计制造及其自动化（中澳合作）' or
+                                   data_dic[item] == '计算机科学与技术（中澳合作）'):
+                doc = super_replace(doc, template_dic[item], data_dic[item], font_dic[data_dic[item]])
+            elif (data_dic[item] == '山东大学（威海）优秀学生一等奖学金' or
+                  data_dic[item] == '山东大学（威海）优秀学生二等奖学金' or
+                  data_dic[item] == '山东大学（威海）优秀学生三等奖学金'):
+                doc = super_replace(doc, template_dic[item], data_dic[item], font_dic[data_dic[item]])
             else:
                 doc = doc.replace(template_dic[item], data_dic[item])
 

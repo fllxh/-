@@ -30,7 +30,7 @@ def index(request):
 
         student_birthday = request.POST.get("stu_bir")
         student_bir = student_birthday.split('-')
-        student_birthday = student_bir[0] + '年' + str(int(student_bir[1])) + '月'
+        student_birthday = student_bir[0] + '年' + student_bir[1] + '月'
 
         student_poli = request.POST.get("stu_poli")
         student_nation = request.POST.get("stu_nation")
@@ -63,13 +63,13 @@ def index(request):
             if student_awardname1 in award:
                 student_awarddate1 = award[2]
                 student_awardunit1 = award[1]
-            elif student_awardname2 in award:
+            if student_awardname2 in award:
                 student_awarddate2 = award[2]
                 student_awardunit2 = award[1]
-            elif student_awardname3 in award:
+            if student_awardname3 in award:
                 student_awarddate3 = award[2]
                 student_awardunit3 = award[1]
-            elif student_awardname4 in award:
+            if student_awardname4 in award:
                 student_awarddate4 = award[2]
                 student_awardunit4 = award[1]
 
