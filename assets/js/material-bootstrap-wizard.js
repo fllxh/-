@@ -415,14 +415,20 @@ function checkdata() {
     }
 
     var stu_reason1 = document.getElementsByName("stu_reason1")[0].value;
-    if (stu_reason1.length < 190) {
+    if (stu_reason1.replace(/[\ |\，|\。|\！|\？|\：|\￥|\%|\、|\“|\”|\（|\）|\；\-|\_|\+|\=|\||\\|\[|\]|\{|\}|\;|\:|\"|\'|\,|\<|\.|\>|\/|\?]/g, "").length < 190) {
         alert('申请理由字数需要大于190，请修改后重试!');
         pass = false;
     }
 
     var stu_reason2 = document.getElementsByName("stu_reason2")[0].value;
-    if (stu_reason2.length < 90) {
+    if (stu_reason2.replace(/[\ |\，|\。|\！|\？|\：|\￥|\%|\、|\“|\”|\（|\）|\；\-|\_|\+|\=|\||\\|\[|\]|\{|\}|\;|\:|\"|\'|\,|\<|\.|\>|\/|\?]/g, "").length < 90) {
         alert('推荐理由字数需要大于90，请修改后重试!');
+        pass = false;
+    }
+
+    var stu_reason3 = document.getElementsByName("stu_reason3")[0].value;
+    if (stu_reason3.length > 200) {
+        alert('院系意见过长，请修改后重试!');
         pass = false;
     }
     if (pass == true) {
