@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" host="119.29.114.218" id="97bd3d6f-6a18-473d-b59a-587cf63aa163" port="22" customName="TencentCloud" nameFormat="CUSTOM">
+        <option name="customName" value="TencentCloud" />
+      </sshConfig>
+      <sshConfig authType="PASSWORD" host="202.194.40.130" id="55323a2d-8fb4-4e7e-ba9b-b002b7a5327e" port="22" customName="SchoolCloud" nameFormat="CUSTOM">
+        <option name="customName" value="SchoolCloud" />
+      </sshConfig>
+    </configs>
+  </component>
+</project>

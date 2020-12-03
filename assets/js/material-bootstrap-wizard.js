@@ -406,15 +406,15 @@ function checkdata() {
     var stu_p2 = document.getElementsByName("stu_p2")[0].value;
     var stu_p3 = document.getElementsByName("stu_p3")[0].value;
     var stu_p4 = document.getElementsByName("stu_p4")[0].value;
-    if (stu_sno.substr(0, 4) != '2017' && (isEmpty(stu_p3) || isEmpty(stu_p4))) {
+    if (stu_sno.substr(0, 4) == '2016' && (isEmpty(stu_p3) || isEmpty(stu_p4))) {
         alert('请填写综合测评成绩，请修改后重试!');
         pass = false;
     }
-    else if (stu_sno.substr(0, 4) != '2017' && stu_p2 != stu_p4) {
+    else if (stu_sno.substr(0, 4) == '2016' && stu_p2 != stu_p4) {
         alert('成绩排名和综合测评总人数不一致，请修改后重试!');
         pass = false;
     }
-    if (stu_sno.substr(0, 4) == '2017' && !(isEmpty(stu_p3) && isEmpty(stu_p4))) {
+    if (stu_sno.substr(0, 4) != '2016' && !(isEmpty(stu_p3) && isEmpty(stu_p4))) {
         alert('请不要填写综合测评成绩，请修改后重试!');
         pass = false;
     }
@@ -436,6 +436,46 @@ function checkdata() {
         alert('院系意见过长，请修改后重试!');
         pass = false;
     }
+
+    var reg = new RegExp(/[2]\d{3}\.([1-9]|1[0-2])\.([1-9]|[1-3][0-9])/);
+    var stu_date1 = document.getElementsByName("stu_date1")[0].value;
+    if(isEmpty(stu_date1)) {
+        alert("提交时间未填写，请填写后重试！");
+        pass = false;
+    }
+    else if(!reg.test(stu_date1)){
+        alert("提交时间格式错误，请填写后重试！");
+        pass = false;
+    }
+
+
+    var stu_date2 = document.getElementsByName("stu_date2")[0].value;
+    if(isEmpty(stu_date2)) {
+        alert("提交时间未填写，请填写后重试！");
+        pass = false;
+    }
+    else if(!reg.test(stu_date2)){
+        alert("提交时间格式错误，请填写后重试！");
+        pass = false;
+    }
+
+    var stu_date3 = document.getElementsByName("stu_date3")[0].value;
+    if(isEmpty(stu_date3)) {
+        alert("提交时间未填写，请填写后重试！");
+        pass = false;
+    }
+    else if(!reg.test(stu_date3)){
+        alert("提交时间格式错误，请填写后重试！");
+        pass = false;
+    }
+
+
+
+    else if(( parseInt(stu_date3.split('.')[2]) -  parseInt(stu_date2.split('.')[2])) < 3){
+        alert('院系意见申请日期应晚于推荐理由日期三天');
+        pass = false;
+    }
+
     if (pass == true) {
         alert('已成功提交，请下载你的申请表。\nε=ε=ε=ε=ε=ε=┌(;￣◇￣)┘');
     }
